@@ -1,8 +1,6 @@
 //set my variables 
 var sliderImag = Array.from(document.querySelectorAll('.slide-container img'));
 
-var slideCount = sliderImag.length;
-
 var currntSlide = 1;
 
 var slideNumber = document.getElementById('slideNumber');
@@ -20,7 +18,7 @@ var pElement = document.createElement('ul');
 pElement.setAttribute('id', 'p-ul');
 
 // loop to create li-list for each image and give each one data-index/number and appended with ul
-for(var i=1; i <= slideCount; i++){
+for(var i=1; i <= sliderImag.length; i++){
     var pItem = document.createElement('li');
 
     pItem.setAttribute('data-Num', i);
@@ -70,7 +68,7 @@ function prevSlide(){
 }
 // check function of active and diabled buttons and bullets
 function checker(){
-    slideNumber.textContent = 'slide #' + (currntSlide) + ' of ' + (slideCount);
+    slideNumber.textContent = 'slide #' + (currntSlide) + ' of ' + (sliderImag.length);
 
     removeActive();
 
@@ -88,7 +86,7 @@ function checker(){
 
     }
 
-    if(currntSlide == slideCount){
+    if(currntSlide == sliderImag.length){
 
         nextBtn.classList.add('disabled');
 
