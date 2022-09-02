@@ -58,7 +58,7 @@ body {
 }
 .slider-controls .prev.disabled,
 .slider-controls .next.disabled {
-    background-color: rgba(0, 150, 136, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     cursor: no-drop;
 }
 .slider-controls .indicators {
