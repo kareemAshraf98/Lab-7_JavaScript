@@ -68,7 +68,7 @@ function prevSlide(){
 }
 // check function of active and diabled buttons and bullets
 function checker(){
-    slideNumber.textContent = 'slide #' + (currntSlide) + ' of ' + (sliderImag.length);
+    slideNumber.textContent =  + (currntSlide) + ' / ' + (sliderImag.length);
 
     removeActive();
 
