@@ -40,7 +40,7 @@ body {
 }
 .slider-controls .prev,
 .slider-controls .next {
-    background-color: #009688;
+    background-color: black;
     color: #FFF;
     font-size: 16px;
     text-align: center;
@@ -83,6 +83,6 @@ body {
     cursor: pointer;
   }
   .slider-controls .indicators ul li.active {
-    background-color: #009688;
+    background-color:black;
     color: #FFF;
   }
